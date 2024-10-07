@@ -1,0 +1,215 @@
+/* Resetting Margin, Padding, and Box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    overflow-y: auto;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #fff;
+    color: #0044cc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.9;
+    box-shadow: 2px 2px 2px 1px rgb(255, 255, 255);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Monogram in the header */
+.header .monogram {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Logo Text */
+.header .logo {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #0044cc;
+}
+
+.header .logo h1 {
+    font-size: 25px;
+}
+
+/* Navigation Links */
+.nav .link {
+    text-decoration: none;
+    color: #0044cc;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #0044cc;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Navigation Hover Effects */
+.nav .link:hover {
+    background-color: #0044cc;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 20%;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+/* Centered Content Box in Hero Section */
+.centered-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Heading */
+.centered-box h2 {
+    color: #0044cc;
+}
+
+.centered-box h1 {
+    color: #666;
+}
+
+/* Icon Links in Hero Section */
+.icon-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Icons Styling */
+.icon-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    filter: opacity(.4) drop-shadow(0 0 0 #666);
+}
+
+/* Hover Effect on Icons */
+.icon-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Content Boxes */
+.boxes {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boxes h1 {
+    color: #0044cc;
+}
+
+.boxes p {
+    color: #666;
+}
+
+/* Projects Section Styling */
+.projects-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f0f4f8;
+}
+
+.projects-section h2 {
+    color: #0044cc;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Grid for Project Cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between project cards */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Project Card Styling */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Content inside each project card */
+.project-content {
+    padding: 2rem;
+    text-align: left;
+}
+
+/* Project Titles */
+.project-content h3 a {
+    color: #0044cc;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.project-content h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Project Description */
+.project-content p {
+    margin-top: 1rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+    text-decoration: none;
+}
