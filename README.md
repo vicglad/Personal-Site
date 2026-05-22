@@ -1,4 +1,4 @@
-# vicglad.github.io
+# Personal-Site
 
 Personal website — a minimal landing page with links to LinkedIn, GitHub, email, and resume.
 
